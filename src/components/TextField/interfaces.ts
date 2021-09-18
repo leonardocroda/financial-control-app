@@ -4,4 +4,5 @@ export interface TextFieldProps {
   value?: string;
   onChangeText?: (text: string) => void;
   variant?: 'outlined' | 'standard';
+  isPassword?: boolean;
 }

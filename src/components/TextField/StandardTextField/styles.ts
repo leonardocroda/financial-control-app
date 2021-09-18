@@ -13,8 +13,9 @@ const styles = StyleSheet.create({
   label: {
     textTransform: 'uppercase',
     color: Colors.primary,
+    margin: 0,
   },
-  input: { height: 28, fontSize: 16 },
+  input: { height: 28, fontSize: 16, padding: 0 },
   containerError: {
     borderBottomColor: Colors.red,
   },

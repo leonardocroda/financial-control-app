@@ -8,32 +8,11 @@
  * @format
  */
 
-import Button from '@components/Button';
-import TextField from '@components/TextField';
-import React, { useState } from 'react';
-import { Alert, SafeAreaView, View } from 'react-native';
+import React from 'react';
+import RootNavigator from './navigations';
 
 const App = () => {
-  const [inputValue, setInputValue] = useState('');
-
-  return (
-    <SafeAreaView>
-      <View style={{ padding: 16 }}>
-        <TextField
-          variant="standard"
-          value={inputValue}
-          onChangeText={text => {
-            setInputValue(text);
-          }}
-          label="teste"
-        />
-        <Button onPress={() => Alert.alert('teste')}>teste</Button>
-        <Button variant="contained" onPress={() => Alert.alert('teste')}>
-          teste
-        </Button>
-      </View>
-    </SafeAreaView>
-  );
+  return <RootNavigator />;
 };
 
 export default App;

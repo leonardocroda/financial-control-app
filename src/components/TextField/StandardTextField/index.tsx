@@ -8,6 +8,7 @@ const StandardTextField: React.FC<StandardTextFieldProps> = ({
   error,
   value,
   onChangeText,
+  isPassword,
 }) => {
   const textAnim = useRef(new Animated.Value(1)).current;
 
@@ -42,11 +43,16 @@ const StandardTextField: React.FC<StandardTextFieldProps> = ({
                 inputRange: [0, 1],
                 outputRange: [8, 16],
               }),
+              lineHeight: textAnim.interpolate({
+                inputRange: [0, 1],
+                outputRange: [12, 20],
+              }),
             },
           ]}>
           {label}
         </Animated.Text>
         <TextInput
+          secureTextEntry={isPassword}
           style={styles.input}
           onFocus={() => !value && labelToTop()}
           onBlur={() => !value && labelToBottom()}

@@ -8,6 +8,7 @@ const TextField: React.FC<TextFieldProps> = ({
   label,
   onChangeText,
   value,
+  isPassword,
 }) => {
   if (variant === 'outlined') {
     return <></>;
@@ -18,6 +19,7 @@ const TextField: React.FC<TextFieldProps> = ({
       error={error}
       onChangeText={onChangeText}
       value={value}
+      isPassword={isPassword}
     />
   );
 };

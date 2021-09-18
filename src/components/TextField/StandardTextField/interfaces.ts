@@ -3,4 +3,5 @@ export interface StandardTextFieldProps {
   error?: string;
   value?: string;
   onChangeText?: (text: string) => void;
+  isPassword?: boolean;
 }

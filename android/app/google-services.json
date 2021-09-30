@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308009188517",
+    "project_id": "finalncial-control",
+    "storage_bucket": "finalncial-control.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308009188517:android:4d7a9c2b6a5a601c02614c",
+        "android_client_info": {
+          "package_name": "com.financialcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308009188517-afq2a7r7fqcsmh61mhi3ghl77b3t8btk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiy_ochiAnbn6H4UffmLAKIDxzZGM3opg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308009188517-afq2a7r7fqcsmh61mhi3ghl77b3t8btk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

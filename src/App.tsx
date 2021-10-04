@@ -9,10 +9,16 @@
  */
 
 import React from 'react';
+import { Provider } from 'react-redux';
 import RootNavigator from './navigations';
+import appReducer from './store';
 
 const App = () => {
-  return <RootNavigator />;
+  return (
+    <Provider store={appReducer}>
+      <RootNavigator />
+    </Provider>
+  );
 };
 
 export default App;

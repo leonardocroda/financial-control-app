@@ -1,24 +1,16 @@
 import Button from '@components/Button';
-import TextField from '@components/TextField';
-import { useNavigation } from '@react-navigation/native';
-import React, { useEffect, useState } from 'react';
-import { Alert, SafeAreaView, View } from 'react-native';
-import { useDispatch } from 'react-redux';
 import styles from './styles';
-import auth from '@react-native-firebase/auth';
-import { signIn } from '@store/auth/actions';
-const SignInScreen = () => {
+import TextField from '@components/TextField';
+import React, { useState } from 'react';
+import { SafeAreaView, View } from 'react-native';
+
+import { createUser } from '@services/auth';
+import { useNavigation } from '@react-navigation/native';
+
+const SignUpScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigation = useNavigation();
-
-  const dispatch = useDispatch();
-
-  useEffect(()=>{})
-  auth().onAuthStateChanged(user => {
-    Alert.alert(JSON.stringify(user));
-  });
-
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.screen}>
@@ -41,17 +33,11 @@ const SignInScreen = () => {
             label="Senha"
           />
           <Button
-            classes={{ container: { marginTop: 10 } }}
             variant="contained"
-            onPress={() => signIn(email, password)}>
-            Entrar
-          </Button>
-          <Button
-            classes={{
-              container: { alignItems: 'center' },
-            }}
-            variant="text"
-            onPress={() => navigation.navigate('SignUp' as never)}>
+            onPress={() => {
+              createUser(email, password);
+              navigation.navigate('SignIn' as never);
+            }}>
             Criar Conta
           </Button>
         </View>
@@ -60,4 +46,4 @@ const SignInScreen = () => {
   );
 };
 
-export default SignInScreen;
+export default SignUpScreen;

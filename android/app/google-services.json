@@ -1,34 +1,49 @@
 {
   "project_info": {
-    "project_number": "308009188517",
-    "project_id": "finalncial-control",
-    "storage_bucket": "finalncial-control.appspot.com"
+    "project_number": "213257896718",
+    "project_id": "financial-control-7a86e",
+    "storage_bucket": "financial-control-7a86e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:308009188517:android:4d7a9c2b6a5a601c02614c",
+        "mobilesdk_app_id": "1:213257896718:android:a56dd7ebe9a92b4bc38d5f",
         "android_client_info": {
           "package_name": "com.financialcontrol"
         }
       },
       "oauth_client": [
         {
-          "client_id": "308009188517-afq2a7r7fqcsmh61mhi3ghl77b3t8btk.apps.googleusercontent.com",
+          "client_id": "213257896718-8olitihgjne07m673ln7t98t8hpmjo27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.financialcontrol",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "213257896718-fcefocgat539hjo8qgeh02tspolbunt8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDiy_ochiAnbn6H4UffmLAKIDxzZGM3opg"
+          "current_key": "AIzaSyBIx7FV_KYQun5ipZny_ZXqqzC1yV0dIjM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "308009188517-afq2a7r7fqcsmh61mhi3ghl77b3t8btk.apps.googleusercontent.com",
+              "client_id": "213257896718-fcefocgat539hjo8qgeh02tspolbunt8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "213257896718-ck9vbq46pcnvipr99mu8v99jusfsl2a1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.financialcontrol"
+              }
             }
           ]
         }

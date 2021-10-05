@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MainNavigator from './main';
 import AuthNavigator from './auth';
+import AuthContext from '@contexts/auth';
 
 const RootNavigator = () => {
+  const { userId } = useContext(AuthContext);
+
   return (
     <NavigationContainer>
-      <AuthNavigator />
-      {/* <MainNavigator /> */}
+      {userId ? <MainNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };

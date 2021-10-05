@@ -9,10 +9,15 @@
  */
 
 import React from 'react';
+import { AuthProvider } from '@contexts/auth';
 import RootNavigator from './navigations';
 
 const App = () => {
-  return <RootNavigator />;
+  return (
+    <AuthProvider>
+      <RootNavigator />
+    </AuthProvider>
+  );
 };
 
 export default App;

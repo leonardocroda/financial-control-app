@@ -3,18 +3,15 @@ import TextField from '@components/TextField';
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { Alert, SafeAreaView, View } from 'react-native';
-import { useDispatch } from 'react-redux';
 import styles from './styles';
 import auth from '@react-native-firebase/auth';
-import { signIn } from '@store/auth/actions';
+
 const SignInScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigation = useNavigation();
 
-  const dispatch = useDispatch();
-
-  useEffect(()=>{})
+  useEffect(() => {});
   auth().onAuthStateChanged(user => {
     Alert.alert(JSON.stringify(user));
   });
@@ -43,7 +40,7 @@ const SignInScreen = () => {
           <Button
             classes={{ container: { marginTop: 10 } }}
             variant="contained"
-            onPress={() => signIn(email, password)}>
+            onPress={() => console.log(email, password)}>
             Entrar
           </Button>
           <Button
